@@ -132,7 +132,7 @@ public class FriendListFragment extends BaseFragment implements OnRecyclerItemLi
     @Override
     public void getChildView(View view, int layoutResId) {
         et_content = view.findViewById(R.id.et_content);
-        et_content.setText("13512672048");
+        
         View iv_close = view.findViewById(R.id.iv_close);
         Button bt_save = view.findViewById(R.id.bt_save);
         iv_close.setOnClickListener(this);
