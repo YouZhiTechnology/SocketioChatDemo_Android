@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:textColor="#3d3c4a"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_login_et_bg"
+            android:hint="请输入账号"
+            android:inputType="textVisiblePassword"
+            android:digits="@string/filter_username"
+            android:maxLength="20"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:textColorHint="#dbdbdb"
+            android:textCursorDrawable="@drawable/shape_et_cursor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="激活码"
+            android:textColor="#3d3c4a"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_login_et_bg"
+            android:hint="请输入激活码"
+            android:inputType="text"
+            android:padding="12dp"
+            android:maxLength="20"
+            android:digits="@string/filter_username"
+            android:textColor="#333333"
+            android:textColorHint="#dbdbdb"
+            android:textCursorDrawable="@drawable/shape_et_cursor"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_code" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img_eye"-->
+<!--            android:layout_width="17dp"-->
+<!--            android:layout_height="12dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/login_pwd_et"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/login_pwd_et"-->
+<!--            app:layout_constraintTop_toTopOf="@id/login_pwd_et" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/selector_btn_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="登录"
+                android:textColor="@color/color_white"
+                android:textSize="17sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/login_forget_pwd_tv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="忘记密码?"-->
+<!--                android:textColor="#bbbbbb"-->
+<!--                android:textSize="15sp" />-->
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_xieyi"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="bottom|center_horizontal"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:text="染书CRMA《隐私协议》"-->
+<!--            android:textColor="#999999"-->
+<!--            android:textSize="13sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            tools:ignore="MissingConstraints" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

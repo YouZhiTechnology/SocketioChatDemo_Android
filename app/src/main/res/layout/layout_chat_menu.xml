@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:background="#CCCCCC"
+        android:layout_height="0.4dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_voice_keyboard"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/icon_chat_voice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/et_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_chat_input_bg"
+            android:hint="请输入内容..."
+            android:imeOptions="actionSend"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#262626"
+            android:textCursorDrawable="@drawable/shape_et_cursor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/iv_menu"
+            app:layout_constraintStart_toEndOf="@+id/iv_voice_keyboard"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_long_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_chat_input_bg"
+            android:drawableLeft="@mipmap/icon_voice_click"
+            android:drawableRight="@mipmap/icon_voice_click"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="长按 说话"
+            android:textColor="#515a71"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/iv_menu"
+            app:layout_constraintStart_toEndOf="@+id/iv_voice_keyboard"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_menu"
+            app:layout_constraintEnd_toStartOf="@+id/iv_send"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:scaleType="center"
+            android:src="@mipmap/chat_send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--面板布局根据需求来进行显示隐藏-->
+    <FrameLayout
+        android:id="@+id/fl_menu_layout"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        android:layout_height="0dp"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#CCCCCC"
+            android:layout_height="0.4dp"/>
+    </FrameLayout>
+
+
+</LinearLayout>

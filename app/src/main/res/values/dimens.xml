@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="default_action_bar_height">56dp</dimen>
+    <dimen name="default_keyboard_height">337.5dp</dimen>
+</resources>

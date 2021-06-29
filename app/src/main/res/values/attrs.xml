@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="title_content" format="string" />
+        <attr name="right_content" format="string" />
+        <attr name="left_visible" format="boolean" />
+        <attr name="left_icon" format="reference" />
+        <attr name="right_visible" format="boolean" />
+        <attr name="right_tv_visible" format="boolean" />
+        <attr name="right_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomProgressBar">
+        <!--外边框颜色-->
+        <attr name="progress_outline_color" format="color" />
+        <!--进度条颜色-->
+        <attr name="progress_color" format="color" />
+        <!--圆圈颜色-->
+        <attr name="progress_circle_color" format="color" />
+        <!--进度字体颜色-->
+        <attr name="progress_text_color" format="color" />
+        <!--进度背景颜色-->
+        <attr name="progress_text_bg_color" format="color" />
+        <!--圆圈高度-->
+        <attr name="progress_circle_height" format="dimension" />
+        <!--progress高度-->
+        <attr name="progress_height" format="dimension" />
+        <!--progress进度条高度-->
+        <attr name="progress_bar_height" format="dimension" />
+        <!--进度文字高度-->
+        <attr name="progress_text_height" format="dimension" />
+        <!--进度文字字体大小-->
+        <attr name="progress_text_size" format="dimension" />
+        <!--进度文字横向padding-->
+        <attr name="progress_text_paddingH" format="dimension" />
+        <!--进度文字纵向padding-->
+        <attr name="progress_text_paddingV" format="dimension" />
+        <!--进度值-->
+        <attr name="progress_progress_bar" format="integer" />
+        <attr name="progress_maxProgress" format="integer" />
+        <attr name="progress_drag_enable" format="boolean" />
+
+    </declare-styleable>
+    <attr name="startColor" format="color" />
+    <attr name="endColor" format="color" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="textColor" format="color" />
+    <declare-styleable name="GoodProgressView">
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="backgroundColor" />
+        <attr name="textColor" />
+    </declare-styleable>
+</resources>

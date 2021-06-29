@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:src="@mipmap/pic_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <FrameLayout
+        android:id="@+id/fl_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_portrait"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_video_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_video_picture"
+                android:layout_width="130dp"
+                android:scaleType="centerCrop"
+                android:layout_height="190dp" />
+
+            <ImageView
+                android:id="@+id/iv_video_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/player_video"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb_video"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:indeterminateDrawable="@drawable/shape_video_progress" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

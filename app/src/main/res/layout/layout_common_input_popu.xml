@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_audition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@mipmap/icon_feedbcak_close"
+                app:layout_constraintBottom_toTopOf="@+id/et_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+
+                <EditText
+                    app:layout_constraintTop_toBottomOf="@+id/iv_close"
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:background="@drawable/selector_filtrate_content_bg"
+                    android:gravity="top"
+                    android:hint="请输入对方账号"
+                    android:maxLength="500"
+                    android:textColor="#4c5059"
+                    android:textColorHint="#959ba6"
+                    android:textSize="15sp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_height="0dp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_student_clule_hint_affirm_bg"
+                android:gravity="center"
+                android:text="确  定"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_content"
+                tools:ignore="MissingConstraints">
+
+
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

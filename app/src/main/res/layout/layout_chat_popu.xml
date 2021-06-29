@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_chat_popu_bg">
+
+    <TextView
+        android:id="@+id/tv_copy"
+        android:textSize="14sp"
+        android:text="复制"
+        android:drawableTop="@mipmap/icon_chat_copy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/color_white"
+        android:layout_width="wrap_content"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_recall"
+        app:layout_constraintStart_toEndOf="@+id/tv_copy"
+        android:textSize="14sp"
+        android:text="撤回"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawablePadding="5dp"
+        android:drawableTop="@mipmap/icon_chat_recall"
+        android:textColor="@color/color_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

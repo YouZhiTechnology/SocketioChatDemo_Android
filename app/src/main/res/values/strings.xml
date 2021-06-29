@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="luban_compress">luban_compress</string>
+    <string name="uploading">上传中</string>
+    <string name="filter_username">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_</string>
+</resources>

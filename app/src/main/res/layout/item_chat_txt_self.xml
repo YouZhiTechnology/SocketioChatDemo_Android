@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:src="@mipmap/pic_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <FrameLayout
+        android:id="@+id/fl_target"
+        android:layout_width="wrap_content"
+        app:layout_constrainedWidth="true"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="60dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_portrait"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_chat_message_self_bg"
+        android:lineSpacingExtra="3dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="14sp"
+ />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

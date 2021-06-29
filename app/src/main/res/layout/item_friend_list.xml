@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:text="名字"
+        android:textColor="#333"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_message_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:text="[图片]"
+        android:textColor="#333"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+        app:layout_constraintLeft_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:background="#e5e5e5"
+        android:layout_height="0.5dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
