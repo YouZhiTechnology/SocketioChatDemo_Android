@@ -36,7 +36,6 @@ public class LoginActivity extends BaseActivity implements MyOkGo.NetResultCallb
 
     @Override
     protected void initView() {
-//        etCode.setText("m53vyg4j");
     }
 
 
