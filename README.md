@@ -17,10 +17,15 @@
 说明：<br>
   SocketManager：Socketio基础上封装的便于项目使用得管理类<br>
   FriendListFragment：消息列表界面<br>
-  CommonChatActivity:聊天界面<br>
+  CommonChatActivity：聊天界面<br>
+  AudioRecordManager：录音管理类<br>
+  SendVoiceHelp：在录音管理类得基础上封装的包含上滑取消发送等一些列交互，具体使用方式在CommonChatActivity里<br>
+  聊天核心代码在com.youzhi.chatdemo.chat包下<br>
+  
 使用方式:<br>
   运行后进入登录界面，需要输入账号和激活码<br>
   1.账号:输入手机号即可<br>
   2.激活码:点击下方链接联系客服快速获取激活码<br>
   3.登录后进入朋友列表界面一开始空白页右上角添加按钮输入对方得账号即可与对方进行聊天<br>
-  [app使用需要客服提供激活码登录方可进行聊天，点击此处客服连接](https://www.huolieyun.com/ "点击进入")
+  [app使用需要客服提供激活码登录方可进行聊天，点击此处客服连接](https://www.huolieyun.com/ "点击进入")<br>
+
